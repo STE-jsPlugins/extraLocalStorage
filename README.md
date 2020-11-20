@@ -19,10 +19,17 @@ and paste it in your `<head>` section.
 
 ## Syntax
 
-**store():** `store(key,data);`
-**getDat()** `getDat(key)`
+**store():** 
+```
+store(key,data);
+```
+**getDat()** 
+```
+getDat(key);
+```
 **getAllLocals()** 
-```var locals = getAllLocals();
+```
+var locals = getAllLocals();
 /*returns variable containing two arrays
 
 locals = {
