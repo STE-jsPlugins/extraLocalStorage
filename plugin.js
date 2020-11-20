@@ -1,6 +1,5 @@
-var locals = getAllLocals(window);
 function displayAllLocals(div,breaks) {
-(breaks == true) ? breaks = "<br/>" : breaks = ", ";
+(breaks != true) ? breaks = ", " : breaks = "<br/>";
 for( var i = 0; i < locals.dat.length; i++) {
 div.innerHTML += "<strong>"+i+": [&nbsp&nbsp</strong>" + "<u>" + locals.name[i] + "</u>, " + locals.dat[i] + "<strong>&nbsp&nbsp]</strong>" + breaks;
 }
