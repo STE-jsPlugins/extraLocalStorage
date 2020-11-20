@@ -4,11 +4,11 @@ for( var i = 0; i < getAllLocals().dat.length; i++) {
 div.innerHTML += "<strong>"+i+": [&nbsp&nbsp</strong>" + "<u>" + getAllLocals().name[i] + "</u>, " + getAllLocals().dat[i] + "<strong>&nbsp&nbsp]</strong>" + breaks;
 }
 }
-function store(winStore,dat) {
-localStorage.setItem(winStore,dat);
+function store(key,dat) {
+localStorage.setItem(key,dat);
 }
-function getDat(winStore) {
-return localStorage.getItem(winStore).toString();
+function getDat(key) {
+return localStorage.getItem(key).toString();
 }
 function getAllLocals() {
 var datStore = [];
