@@ -43,4 +43,4 @@ dat: [localStorage data]
 ```
 displayAllLocals(<<documentElement>>,<<true|false>>);
 ```
-[View Source Code](https://ste-jsplugins.github.io/extraLocalStorage/plugin.js)
+[View Source Code](https://ste-jsplugins.github.io/extraLocalStorage/plugin.js,target="_blank")
