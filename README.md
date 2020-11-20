@@ -12,12 +12,10 @@ and paste it in your `<head>` section.
 
 ## Functions
 
-`store()` stores data that is retrievable using the key.
-```
-```
-`getDat()` gets data by using the key from the function above.
-`getAllLocals()` retrieves and returns all localStorage data into arrays.
-`displayAllLocals()` displays localStorage in an organized array.
+ - `store()` stores data that is retrievable using the key.
+ -`getDat()` gets data by using the key from the function above.
+ -`getAllLocals()` retrieves and returns all localStorage data into arrays.
+ -`displayAllLocals()` displays localStorage in an organized array.
 
 ## Syntax
 
