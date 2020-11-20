@@ -1,6 +1,6 @@
 function displayAllLocals(div,breaks) {
 (breaks != true) ? breaks = ", " : breaks = "<br/>";
-for( var i = 0; i < locals.dat.length; i++) {
+for( var i = 0; i < getAllLocals().dat.length; i++) {
 div.innerHTML += "<strong>"+i+": [&nbsp&nbsp</strong>" + "<u>" + getAllLocals().name[i] + "</u>, " + getAllLocals().dat[i] + "<strong>&nbsp&nbsp]</strong>" + breaks;
 }
 }
