@@ -19,7 +19,7 @@ and paste it in your `<head>` section.
 
 ## Syntax
 
-**store():** 
+**store()** 
 ```
 store(key,data);
 ```
