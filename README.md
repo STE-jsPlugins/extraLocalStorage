@@ -39,4 +39,7 @@ dat: [localStorage data]
 
 */
 ```
-**displayAllLocals()** `displayAllLocals(<<documentElement>>,<<true|false>>);`
+**displayAllLocals()** 
+```
+displayAllLocals(<<documentElement>>,<<true|false>>);
+```
