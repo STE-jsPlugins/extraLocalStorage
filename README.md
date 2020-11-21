@@ -29,9 +29,11 @@ getDat(key);
 ```
 **getAllLocals()** 
 ```
-var locals = getAllLocals();
-/*returns variable containing two arrays
+var locals = getAllLocals(boolean);
+/*if boolean is true, returns single string variable containing localStorage data. Otherwise returns variable containing two arrays.
 
+locals = [localStorage data]
+OR
 locals = {
 name: [localStorage key(s)],
 dat: [localStorage data]
@@ -41,6 +43,6 @@ dat: [localStorage data]
 ```
 **displayAllLocals()** 
 ```
-displayAllLocals(<<documentElement>>,<<true|false>>);
+displayAllLocals(<<documentElement>>,boolean);
 ```
 [View Source Code](https://ste-jsplugins.github.io/extraLocalStorage/openFromREADME.html)
