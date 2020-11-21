@@ -10,7 +10,8 @@ localStorage.setItem(key,dat);
 function getDat(key) {
 return localStorage.getItem(key).toString();
 }
-function getAllLocals() {
+function getAllLocals(single) {
+if(single != true) {
 var datStore = [];
 var datKeys = [];
 for( var i = 0; i < 100; i++ ) {
@@ -22,5 +23,20 @@ var grabbedDat = localStorage.getItem(localKey);
 grabbedDat = grabbedDat.split("<br/>").join("\\n");
 datStore.push(grabbedDat);
 datKeys.push(localKey);
+}
+}else{
+var dat = [];
+for(var i = 0; i < 100; i++ ) {
+var subdat = [];
+var localKey = localStorage.key(i);
+if(!localKey) {
+return dat;
+}
+var grabbedDat = localStorage.getItem(localKey);
+grabbedDat = grabbedDat.split("<br/>").join("\\n");
+subdat[0] = localKey;
+subdat[1] = grabbedDat;
+dat.push(subdat);
+}
 }
 }
